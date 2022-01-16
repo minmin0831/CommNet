@@ -1,0 +1,684 @@
+body {
+	background-color: #d5d5d5ff;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	font-size: 16px;
+}
+
+/* Header starts */
+
+header {
+	background-color: white;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+main {
+	display: flex;
+}
+.community { /* community select dropbox for logged-in users */
+	height: 80px;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+.community form select {
+	margin: 10px;
+	padding: 10px;
+	height: 40px;
+	font-size: 16px;
+	border: 1px solid #4a86e8ff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.search {
+	height: 40px;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+.search form {
+	height: 40px;
+	width: 100%;
+}
+.search form input {
+	height: 30px;
+	width: 80%;
+	font-size: 18px;
+	cursor: text;
+}
+.search form input:hover {
+	background-color: white;
+	color: gray;
+}
+input {
+	margin: 10px;
+	padding: 10px;
+	height: 40px;
+	font-size: 16px;
+	border: 1px solid #4a86e8ff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+input:hover {
+	background-color: #4a86e8ff;
+	color: white;
+}
+/* header ends */
+
+/* main starts */
+main {
+	width: 100%;
+}
+
+/* main section starts */
+main section {
+	width: 62.8%;
+}
+.trending {
+	background-color: white;
+	width: 600px;
+	height: 100px;
+	line-height: 100px;
+	display: flex;
+	justify-content: flex-start;
+	border: 1px solid whitesmoke; /* #4a86e8ff */
+	border-radius: 5px;
+	margin: 30px 10px 20px auto;
+}
+.trending input {
+	margin: 10px;
+	width: 100px;
+	padding: 10px;
+	height: 40px;
+	font-size: 16px;
+	border: 1px solid #4a86e8ff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.contents {
+	display: flex;
+}
+.contents .vote {
+	display: flex;	
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 20px 0 20px auto;
+}
+.contents .article {
+	background-color: white;
+	width: 600px;
+	height: auto;
+	line-height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border: 1px solid whitesmoke; /* #4a86e8ff */
+	border-radius: 5px;
+	margin: 10px 10px 20px 5px;
+}
+.header {
+	display: flex;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0 0 20px;
+}
+.header a img {
+	border-radius: 15px;
+}
+.header .community_name {
+	margin: 0 10px;
+}
+.header .author {
+	margin: 0 10px;
+	font-size: 14px;
+}
+.article .title {
+	margin: 10px 20px;
+	text-align: left;
+	line-height: 20px;
+}
+.article .content_words {
+	margin: 10px 20px;
+	text-align: left;
+	line-height: 20px;
+}
+.article .additional_info {
+	display: flex;
+	flex-direction: column;
+}
+.article .additional_info img {
+	margin: 10px 20px;
+	text-align: left;
+	line-height: 20px;
+}
+.article .additional_info .poll_view {
+	margin: 10px 20px;
+	text-align: left;
+	line-height: 20px;
+}
+.article .additional_info .poll_view table {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.article .additional_info .poll_view table tr th {
+	width: 100%;
+	border-bottom: 1px solid black;
+	border-collapse: collapse;
+}
+.article .additional_info .poll_view table tr td {
+	width: 100%;
+}
+.total_votes {
+	color: #ea9999;
+}
+.poll_item1 {
+	width: 500px;
+	color: white;
+	background-color: #ea9999;
+}
+.poll_item2 {
+	width: 400px;
+	color: white;
+	background-color: #ea9999;
+}
+/* main section ends */
+
+/* main aside starts */
+main aside {
+	width: 37.2%;
+}
+
+/* main aside top_communities starts */
+main aside .top_communities {
+	background-color: white;
+	width: 300px;
+	height: auto;
+	border: 1px solid whitesmoke; /* #4a86e8ff */
+	border-radius: 5px;
+	margin: 30px auto 20px 10px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border: 0;
+}
+main aside .top_communities .title {
+	height: 50px;
+	line-height: 50px;
+	background-color: #4a86e8ff;
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 10px;
+}
+main aside .top_communities .community {
+	line-height: 30px;
+	width: 100%;
+	height: 30px;
+	padding-left: 20px;
+	text-align: left;
+}
+/* main aside top_communities ends */
+
+/* main aside create_community starts */
+main aside .create_community {
+	background-color: white;
+	width: 300px;
+	height: 150px;
+	line-height: 150px;
+	border: 1px solid whitesmoke; /* #4a86e8ff */
+	border-radius: 5px;
+	margin: 20px auto 20px 10px;
+	padding-top: 20px;
+}
+main aside .create_community .message {
+	line-height: 30px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+main aside .create_community .create_button {
+	line-height: 30px;
+	font-size: 16px;
+}
+
+/* main aside create_community ends */
+
+/* main aside footer starts */
+main aside footer {
+	background-color: white;
+	width: 300px;
+	height: 150px;
+	border: 1px solid whitesmoke; /* #4a86e8ff */
+	border-radius: 5px;
+	margin: 20px auto 20px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+	padding-top: 30px;
+}
+main aside footer span {
+	margin-left: 20px;
+	font-size: 12px;
+}
+/* main aside footer ends */
+
+/* main aside ends */
+
+/* main ends */
+
+/* modal background starts */
+.modal_background {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+
+/* signup_modal starts */
+.signup_modal {
+	background-color: #434343ff;
+	width: 560px;
+	height: 360px;
+	border-radius: 5px;
+	padding: 30px 20px;
+	text-align: left;
+	margin: 10% auto;
+	height: auto;
+	position: relative;
+}
+
+/* signup_form starts */
+.signup_modal .signup_form {
+	height: 100%;
+}
+
+/* message starts */
+.signup_modal .message {
+	top: 20px;
+	left: 20px;
+}
+/* email_input starts */
+.signup_modal .message .email_message {
+	background-color: white;
+	width: 250px;
+	height: auto;
+	border-radius: 5px;
+	text-align: left;
+	padding: 15px;
+	margin-bottom: 5px;
+	display: block;
+}
+.signup_modal .message .email_message .title {
+	display: block;
+	font-size: 24px;
+}
+.signup_modal .message .email_message .desc {
+	display: block;
+	font-size: 16px;
+}
+.signup_modal .continue_email {
+	display: block;
+}
+/* email_input ends */
+
+/* username_password starts */
+.signup_modal .message .username_password_message {
+	background-color: white;
+	width: 250px;
+	height: auto;
+	border-radius: 5px;
+	text-align: left;
+	padding: 15px;
+	margin-bottom: 5px;
+	display: none;
+}
+.signup_modal .message .username_password_message .title {
+	display: block;
+	font-size: 24px;
+}
+.signup_modal .message .username_password_message .desc {
+	display: block;
+	font-size: 16px;
+}
+.signup_modal .continue_username_password {
+	display: none;
+}
+/* username_password ends */
+
+/* gender_message starts */
+.signup_modal .message .gender_message {
+	background-color: white;
+	width: 250px;
+	height: auto;
+	border-radius: 5px;
+	text-align: left;
+	padding: 15px;
+	margin: 5px 5px 5px 0;
+	display: none;
+}
+.signup_modal .message .gender_message .title {
+	display: block;
+	font-size: 24px;
+}
+.signup_modal .message .gender_message .desc {
+	display: block;
+	font-size: 16px;
+}
+.signup_modal .continue_gender {
+	display: none;
+}
+/* gender_message ends */
+
+/* topics_message starts */
+.signup_modal .message .topics_message {
+	background-color: white;
+	width: 250px;
+	height: auto;
+	border-radius: 5px;
+	text-align: left;
+	padding: 15px;
+	margin: 5px 5px 5px 0;
+	display: none;
+}
+.signup_modal .message .topics_message .title {
+	display: block;
+	font-size: 24px;
+}
+.signup_modal .message .topics_message .desc {
+	display: block;
+	font-size: 16px;
+}
+.signup_modal .continue_topics {
+	display: none;
+}
+/* topics_message ends */
+
+/* communities_message starts */
+.signup_modal .message .communities_message  {
+	background-color: white;
+	width: 250px;
+	height: auto;
+	border-radius: 5px;
+	text-align: left;
+	padding: 15px;
+	margin: 5px 5px 5px 0;
+	display: none;
+}
+.signup_modal .message .communities_message .title {
+	display: block;
+	font-size: 24px;
+}
+.signup_modal .message .communities_message .desc {
+	display: block;
+	font-size: 16px;
+}
+.signup_modal .continue_communities {
+	display: none;
+}
+/* communities_message ends */
+
+/* done_message starts */
+.signup_modal .message .done_message  {
+	background-color: white;
+	width: 250px;
+	height: auto;
+	border-radius: 5px;
+	text-align: left;
+	padding: 15px;
+	margin: 5px 5px 5px 0;
+	display: none;
+}
+.signup_modal .message .done_message .title {
+	display: block;
+	font-size: 24px;
+}
+.signup_modal .submit_done {
+	display: none;
+}
+/* done_message ends */
+
+/* skip_button starts */
+.signup_modal .message .skip_button{
+	display: none;
+}
+.signup_modal .message .skip_button .skip {
+	position: absolute;
+	right: 80px;
+	top: 20px;
+	display: block;
+	font-size: 16px;
+	border: 0;
+	background-color: #434343ff; 
+	color: white;
+}
+.signup_modal .message .skip_button .skip:hover {
+	color: #4a86e8ff;
+}
+/* skip_button ends */
+
+/* close_button starts */
+.signup_modal .message .close_button .close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	display: block;
+	font-size: 16px;
+	border: 0;
+	background-color: #434343ff; 
+	color: white;
+}
+.signup_modal .message .close_button .close:hover {
+	color: #4a86e8ff;
+}
+/* close_button ends */
+
+/* message ends */
+
+/* email_input starts */
+.signup_modal .email_input {
+	display: block;
+}
+.signup_modal .input_email {
+	margin: 5px 5px 5px 0;
+	height: 24px;
+	width: 400px;
+	cursor: default;
+}
+.signup_modal .input_email:hover {
+	background-color: white;
+	color: gray;
+	cursor: text;
+}
+.signup_modal .button_verify {
+	background-color: #ea9999;
+	margin: 5px 5px 5px 0;
+	height: 44px;
+	width: 122px;
+	border: none;
+}
+.signup_modal .button_verify:hover {
+	background-color: #4a86e8ff;
+}
+/* email_input ends */
+
+/* username and passwords input starts */
+.signup_modal .username_password_input {
+	display: none;
+}
+.signup_modal .username_password_input .input_username {
+	margin: 5px 5px 5px 0;
+	height: 24px;
+	width: 400px;
+	cursor: default;
+}
+.signup_modal .username_password_input .input_username:hover {
+	background-color: white;
+	color: gray;
+	cursor: text;
+}
+.signup_modal .username_password_input .button_verify {
+	background-color: #ea9999;
+	margin: 5px 5px 5px 0;
+	height: 44px;
+	width: 122px;
+	border: none;
+}
+.signup_modal .username_password_input .button_verify:hover {
+	background-color: #4a86e8ff;
+}
+.signup_modal .username_password_input .input_password {
+	margin: 5px 5px 5px 0;
+	height: 24px;
+	width: 400px;
+	cursor: default;
+}
+.signup_modal .username_password_input .input_password:hover {
+	background-color: white;
+	color: gray;
+	cursor: text;
+}
+.signup_modal .username_password_input .input_password_confirm {
+	margin: 5px 5px 5px 0;
+	height: 24px;
+	width: 400px;
+	cursor: default;
+}
+.signup_modal .username_password_input .input_password_confirm:hover {
+	background-color: white;
+	color: gray;
+	cursor: text;
+}
+/* username and passwords input ends */
+
+/* gender input starts */
+.signup_modal .gender_input {
+	display: none;
+}
+.signup_modal .gender_input {
+	margin: 0;
+	padding: 0;
+}
+.signup_modal .gender_input .gender_radio input[type="radio"] {
+	display: none;
+}
+.signup_modal .gender_input .gender_radio span {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	border: 1px solid none;
+	border-radius: 3px;
+	background-color: #ea9999;
+	width: 252px;
+	color: black;
+	margin: 5px 5px 5px 0;
+	cursor: pointer;
+}
+.signup_modal .gender_input .gender_radio span:hover {
+	background-color: #4a86e8ff;
+	color: white;
+}
+/* gender input starts */
+
+/* topics input starts */
+.signup_modal .topics_input {
+	display: none;
+}
+.signup_modal .topics_input .topics_checkbox {
+	margin: 0;
+	padding: 0;
+}
+.signup_modal .topics_input .topics_checkbox input[type="checkbox"] {
+	display: none;
+}
+.signup_modal .topics_input .topics_checkbox span {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	border: 1px solid none;
+	border-radius: 3px;
+	background-color: #ea9999;
+	
+	color: black;
+	margin: 5px 5px 5px 0;
+	cursor: pointer;
+}
+.signup_modal .topics_input .topics_checkbox span:hover {
+	background-color: #4a86e8ff;
+	color: white;
+}
+/* topics input ends */
+
+/* communities starts */
+.signup_modal .communities_input {
+	display: none;
+}
+.signup_modal .communities_input .communities_checkbox {
+	margin: 0;
+	padding: 0;
+}
+.signup_modal .communities_input .communities_checkbox input[type="checkbox"] {
+	display: none;
+}
+.signup_modal .communities_input .communities_checkbox .community_name {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	border: 1px solid none;
+	border-radius: 3px;
+	background-color: #ea9999;
+	
+	color: black;
+	margin: 5px 5px 5px 0;
+	cursor: pointer;
+}
+.signup_modal .communities_input .communities_checkbox .community_name:hover {
+	background-color: #4a86e8ff;
+	color: white;
+}
+/* communities ends */
+
+/* continue button starts */
+.signup_modal .continue {
+	background-color: #ea9999;
+	margin: 5px 5px 5px 0;
+	height: 44px;
+	width: 555px;
+	border: none;
+}
+.signup_modal .continue:hover {
+	background-color: #4a86e8ff;
+}
+/* continue button ends */
+
+/* option_login starts */
+.signup_modal .option_login {
+	text-align: right;
+	color: white;
+}
+.signup_modal .option_login a {
+	color: #ea9999;
+	text-decoration: none;
+}
+.signup_modal .option_login a:hover {
+	color: #4a86e8ff;
+}
+/* option_login ends */
+
+/* signup_form ends */
+
+/* signup_modal ends */
+
+/* modal background ends */

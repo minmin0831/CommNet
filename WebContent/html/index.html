@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Community Network Web Service</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- header before login -->
+	<header class="logoin_no">
+		<a href=""><img class="logo" src="../images/logo.jpg.png" alt="logo_home"></a>
+		<div class="search">
+			<form action="searchContents">
+				<input type="text" placeholder="search contents">
+			</form>
+		</div>
+		<div class="signup">
+			<input id="signup" type="button" value="Sign Up">
+		</div>
+		<div class="login">
+			<input id="login" type="button" value="Log In">
+		</div>
+	</header>
+
+	<!-- header after login -->
+	<header class="login_yes">
+		<a href=""><img class="logo" src="../images/logo.jpg.png" alt="logo_home"></a>
+		<div class="community">
+			<form action="selectCommunity">
+				<select name="community">
+					<option value="0" selected>My Communities</option>
+					<option value="Tesla News">Tesla News</option>
+					<option value="Metaverse">Metaverse</option>
+					<option value="Mavel Theory">Mavel Theory</option>
+					<option value="National Geographic GIFS">National Geographic GIFS</option>
+				</select>
+			</form>
+		</div>
+		<div class="search">
+			<form action="searchContents">
+				<input type="text" placeholder="search contents">
+			</form>
+		</div>
+		<div class="quiz">
+			<a href=""><input type="button" value="quiz"></a>
+		</div>
+		<div class="popular">
+			<a href=""><input type="button" value="popular"></a>
+		</div>
+		<div class="chat">
+			<a href=""><input type="button" value="chat"></a>
+		</div>
+		<div class="noti">
+			<a href=""><input type="button" value="noti"></a>
+		</div>
+		<div class="create_post">
+			<a href=""><input type="button" value="create_post"></a>
+		</div>
+		<div class="mypage">
+			<a href=""><input type="button" value="mypage"></a>
+		</div>
+	</header>
+
+	<!-- main -->
+	<main>
+		<!-- main section -->
+		<section>
+			<div class="trending">
+				<div class="best">
+					<a href=""><input type="button" value="Best"></a>
+				</div>
+				<div class="hot">
+					<a href=""><input type="button" value="Hot"></a>
+				</div>
+				<div class="new">
+					<a href=""><input type="button" value="New"></a>
+				</div>
+				<div class="top">
+					<a href=""><input type="button" value="Top"></a>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="vote">
+					<a href="" class="upvote"><img src="../images/arrow_up.png" alt="upvote_button" width="20px"></a>
+					<span class="vote_result">150</span>
+					<a href="" class="downvote"><img src="../images/arrow_down.png" alt="downvote_button" width="20px"></a>
+				</div>
+				<a href="">
+					<div class="article">
+						<div class="header">
+							<a href=""><img src="../images/tesla_thumbnail.png" alt="" class="community_thumbnail" width="30px"
+									height="30px"></a>
+							<span class="community_name"><strong>Tesla News</strong></span>
+							<span class="author">by <strong>TeslaRider</strong></span>
+						</div>
+						<div class="title">News: New Model X is comming soon.</div>
+						<div class="content_words">What's new is going to be revealed on this weekend's Tesla day. Can't wait to
+							see!!!</div>
+						<div class="additional_info">
+							<img src="../images/model_x.png" alt="uploaded_image" width="300px">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="contents">
+				<div class="vote">
+					<a href="" class="upvote"><img src="../images/arrow_up.png" alt="upvote_button" width="20px"></a>
+					<span class="vote_result">150</span>
+					<a href="" class="downvote"><img src="../images/arrow_down.png" alt="downvote_button" width="20px"></a>
+				</div>
+				<a href="">
+					<div class="article">
+						<div class="header">
+							<a href=""><img src="../images/tesla_thumbnail.png" alt="" class="community_thumbnail" width="30px"
+									height="30px"></a>
+							<span class="community_name"><strong>Tesla News</strong></span>
+							<span class="author">by <strong>TeslaRider</strong></span>
+						</div>
+						<div class="title">News: New Model X is comming soon.</div>
+						<div class="content_words">What's new is going to be revealed on this weekend's Tesla day. Can't wait to
+							see!!!</div>
+						<div class="additional_info">
+							<img src="../images/model_x.png" alt="uploaded_image" width="300px">
+							<div class="poll_view">
+								<table>
+									<tr>
+										<th>
+											<div class="total_votes"><strong>100</strong> Votes</div>
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<div class="poll_item1"><strong>100</strong> Trunks</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="poll_item2"><strong>70</strong> No Trunks</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+				</a>
+			</div>
+			</div>
+		</section>
+		<!-- main aside -->
+		<aside>
+			<!-- main aside top_communities -->
+			<section class="top_communities">
+				<div class="title"><strong>Top Communities</strong></div>
+				<div class="community">1.<span> Bitcoin</span></div>
+				<div class="community">2.<span> Tesla</span></div>
+				<div class="community">3.<span> Multiverse</span></div>
+				<div class="community">4.<span> Disney</span></div>
+				<div class="community">5.<span> Netflix</span></div>
+				<div class="community">6.<span> Apple</span></div>
+				<div class="community">7.<span> Basketball</span></div>
+			</section>
+			<!-- main aside create_community -->
+			<section class="create_community">
+				<div class="message"><span>Have an idea for a new community?</span></div>
+				<div class="create_button">
+					<a href=""><input type="button" value="Create Community"></a>
+				</div>
+			</section>
+			<!-- main aside footer -->
+			<footer>
+				<a href=""><span>About</span></a>
+				<a href=""><span>Terms</span></a>
+				<a href=""><span>Content Policy</span></a>
+				<a href=""><span>Privacy Policy</span></a>
+				<span>Community Network Web Service &copy; All rights reserved</span>
+			</footer>
+		</aside>
+	</main>
+	<!-- signup_modal -->
+	<div class="modal_background">
+		<div class="signup_modal">
+			<form name="signup_form" class="signup_form" action="" method="post">
+				<div class="message">
+					<!-- email_mesage -->
+					<div class="email_message">
+						<span class="title">Sign up</span><br>
+						<span class="desc">By continuing, you are setting up an account and agree to our user Agreement and Privacy
+							Policy.</span>
+					</div>
+					<!-- username_password_message -->
+					<div class="username_password_message">
+						<span class="title">Sign up</span><br>
+						<span class="desc">Your username is how other community members will see you. This name will be used to credit
+							you for things you share here. What should we call you?</span>
+					</div>
+					<!-- gender_message -->
+					<div class="gender_message">
+						<span class="title">Which of the following best describes you?</span><br>
+						<span class="desc">We will never share this information and use it to improve what content you see.</span>
+					</div>
+					<!-- topics_message -->
+					<div class="topics_message">
+						<span class="title">What are you into?</span><br>
+						<span class="desc">Select three topics to continue.</span>
+					</div>
+					<!-- communities_message -->
+					<div class="communities_message">
+						<span class="title">Join some communities!</span><br>
+						<span class="desc">Recommended for you</span>
+					</div>
+					<!-- communities_message -->
+					<div class="done_message">
+						<span class="title">We are happy you join us!</span><br>
+					</div>
+					<!-- skip_button -->
+					<div class="skip_button">
+						<strong><input class="skip" type="button" value="skip"></strong>
+					</div>
+					<!-- close_button -->
+					<div class="close_button">
+						<strong><input class="close" type="reset" value="close"></strong>
+					</div>
+				</div>
+				<!-- email_input -->
+				<div class="email_input">
+					<input name="email" class="input_email" type="text" placeholder="enter email and verify it">
+					<input name="verify_email" class="button_verify" type="button" value="verify">
+				</div>
+				<!-- continue button email -->
+				<div class="continue_email">
+					<input class="continue" id="continue_email" type="button" value="continue">
+				</div>
+				<!-- username_password_input -->
+				<div class="username_password_input">
+					<input name="username" class="input_username" type="text" placeholder="choose a username" autocomplete="off">
+					<input name="verify_username" class="button_verify" type="button" value="verify">
+					<input name="password" class="input_password" type="password" placeholder="type in your password" autocomplete="off">
+					<input name="password_confirm" class="input_password_confirm" type="password" placeholder="confirm your password" autocomplete="off">
+				</div>
+				<!-- continue button username_password -->
+				<div class="continue_username_password">
+					<input class="continue" id="continue_username_password" type="button" value="continue">
+				</div>
+				<!-- gender_input -->
+				<div class="gender_input">
+					<p class="gender_radio">
+						<label><input type="radio" name="woman" id="woman" value="woman"><span>Woman</span></label>
+						<label><input type="radio" name="man" id="man" value="man"><span>Man</span></label>
+						<label><input type="radio" name="non_binary" id="non_binary"
+								value="non_binary"><span>Non-binary</span></label>
+						<label><input type="radio" name="I_prefer_not_to_say" id="I_prefer_not_to_say"
+								value="I_prefer_not_to_say"><span>I prefer not to say</span></label>
+					</p>
+				</div>
+				<!-- continue button gender -->
+				<div class="continue_gender">
+					<input class="continue" id="continue_gender" type="button" value="continue">
+				</div>
+				<!-- topics_input -->
+				<div class="topics_input">
+					<p class="topics_checkbox">
+						<label><input type="checkbox" name="advice" id="advice" value="advice"><span>advice</span></label>
+						<label><input type="checkbox" name="animal" id="animal" value="animal"><span>animal</span></label>
+						<label><input type="checkbox" name="business" id="business" value="business"><span>business</span></label>
+						<label><input type="checkbox" name="computer_science" id="computer_science"
+								value="computer_science"><span>computer science</span></label>
+						<label><input type="checkbox" name="economics" id="economics"
+								value="economics"><span>economics</span></label>
+						<label><input type="checkbox" name="environment" id="environment"
+								value="environment"><span>environment</span></label>
+						<label><input type="checkbox" name="music" id="music" value="music"><span>music</span></label>
+						<label><input type="checkbox" name="politics" id="politics" value="politics"><span>politics</span></label>
+						<label><input type="checkbox" name="sports" id="sports" value="sports"><span>sports</span></label>
+						<label><input type="checkbox" name="universe" id="universe" value="universe"><span>universe</span></label>
+					</p>
+				</div>
+				<!-- continue button topics -->
+				<div class="continue_topics">
+					<input class="continue" id="continue_topics" type="button" value="continue">
+				</div>
+				<!-- communities_input -->
+				<div class="communities_input">
+					<p class="communities_checkbox">
+						<label><input type="checkbox" name="we_care_animals" id="we_care_animals" value="we_care_animals">
+							<span class="community_name">We Care Animals<span><br>Let's raise ethical awareness about the
+									animals.</span></span>
+						</label>
+						<label><input type="checkbox" name="tech_geeks" id="tech_geeks" value="tech_geeks">
+							<span class="community_name">Tech Geeks<span><br>Let's share new technologies and your
+									knowledge.</span></span>
+						</label>
+						<label><input type="checkbox" name="business_insiders" id="business_insiders" value="business_insiders">
+							<span class="community_name">Business Insiders<span><br>Find out the business trends around the
+									world.</span></span>
+						</label>
+						<label><input type="checkbox" name="environment_watch" id="environment_watch" value="environment_watch">
+							<span class="community_name">Environment Watch<span><br>Check out our news feeds on
+									environment.</span></span>
+						</label>
+					</p>
+				</div>
+				<!-- continue button communities -->
+				<div class="continue_communities">
+					<input class="continue" id="continue_communities" type="button" value="continue">
+				</div>
+				<!-- done button communities -->
+				<div class="submit_done">
+					<input class="continue" id="submit_done" type="button" value="done">
+				</div>
+				<div class="option_login">
+					<span>Already have an acconut?</span>
+					<a href=""><span>LOGIN</span></a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/index.js"></script>
+</script>
+</html>
