@@ -157,10 +157,10 @@
 				
 				<!-- done button communities -->
 				<div class="submit_done">
-					<a href="index.jsp"><input class="continue" id="submit_done" type="submit" value="done" /></a>
+					<input class="continue" id="submit_done" type="submit" value="done" onclick="javascript: form.action='index.jsp'" />
 				</div>
 				<div class="option_login">
-					<span>Already have an acconut?</span>
+					<span>Already have an account?</span>
 					<a href=""><span>LOGIN</span></a>
 				</div>
 				
