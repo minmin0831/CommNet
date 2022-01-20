@@ -11,11 +11,17 @@ String email_copy = request.getParameter("email");
 String username_copy = request.getParameter("username");
 String password_copy = request.getParameter("password");
 String password_confirm_copy = request.getParameter("password_confirm");
+String gender = request.getParameter("gender");
+String[] topics = request.getParameterValues("topics");
+String[] communities = request.getParameterValues("communities");
 
 System.out.println("copy: " + email_copy);
 System.out.println("copy: " + username_copy);
 System.out.println("copy: " + password_copy);
 System.out.println("copy: " + password_confirm_copy);
+System.out.println("copy: " + gender);
+System.out.println("copy: " + topics);
+System.out.println("copy: " + communities);
 
 String content = "none.jsp";
 if(request.getParameter("content") != null) {

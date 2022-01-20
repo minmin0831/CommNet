@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <jsp:useBean id="uMgr" class="user.UserMgr" />
-<jsp:useBean id="bean" class="user.UserBean" />
 
 <%
 	request.setCharacterEncoding("UTF-8");
@@ -58,14 +57,14 @@
 				</div>
 				<!-- username_password_input -->
 				<div class="username_password_input">
-					<input name="username" class="input_username" type="text" placeholder="choose a username" value="<%=username %>" />
+					<input name="username" class="input_username" type="text" placeholder="choose a username" value="<%=username %>" required />
 					<input name="verify_username" class="button_verify" type="submit" value="verify"
 						onclick="javascript: form.action='index.jsp?content=username.jsp'">
 
-					<input name="password" class="input_password" type="password" placeholder="type in your password" value="<%=password %>" />
+					<input name="password" class="input_password" type="password" placeholder="type in your password" value="<%=password %>" required />
 
 					<input name="password_confirm" class="input_password_confirm" type="password"
-						placeholder="confirm your password" value="<%=password_confirm %>" />
+						placeholder="confirm your password" value="<%=password_confirm %>" required />
 				</div>
 				<%
 				if(result || 

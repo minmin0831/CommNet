@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <jsp:useBean id="uMgr" class="user.UserMgr" />
-<jsp:useBean id="bean" class="user.UserBean" />
 
 <%
 	request.setCharacterEncoding("utf-8");
@@ -9,9 +8,6 @@
 	if(request.getParameter("email") != null) {
 		email = request.getParameter("email");
 	};
-	
-	bean.setEmail(request.getParameter("email"));
-	System.out.println("carried email : " + bean.getEmail());
 	
 	boolean result = uMgr.checkEmail(email);
 	System.out.println("email: " + email);
@@ -38,7 +34,7 @@
 				</div>
 				<!-- email_input -->
 				<div class="email_input">
-					<input name="email" class="input_email" type="text" placeholder="enter email and verify it" value="<%=email%>" />
+					<input name="email" class="input_email" type="text" placeholder="enter email and verify it" value="<%=email%>" required />
 					<input name="verify_email" class="button_verify" type="submit" value="verify"
 						onclick="javascript: form.action='index.jsp?content=signup.jsp'">
 				</div>
@@ -47,7 +43,7 @@
 				%>
 				<!-- continue button email -->
 				<div class="continue_email">
-					<input class="continue" id="continue_email" type="submit" value="Continue"
+					<input class="continue" id="continue_email" type="submit" value="Continue" 
 					onclick="javascript: form.action='index.jsp?content=signup.jsp'" />
 				</div>
 				<%
