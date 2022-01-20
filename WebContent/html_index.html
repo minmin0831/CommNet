@@ -6,16 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Community Network Web Service</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<!-- header before login -->
 	<header class="logoin_no">
-		<a href=""><img class="logo" src="../images/logo.jpg.png" alt="logo_home"></a>
+		<a href=""><img class="logo" src="images/logo.jpg.png" alt="logo_home"></a>
 		<div class="search">
-			<form action="searchContents">
-				<input type="text" placeholder="search contents">
+			<form action="">
+				<input class="search_input_lg" type="text" placeholder="search contents">
 			</form>
 		</div>
 		<div class="signup">
@@ -28,10 +28,10 @@
 
 	<!-- header after login -->
 	<header class="login_yes">
-		<a href=""><img class="logo" src="../images/logo.jpg.png" alt="logo_home"></a>
+		<a href=""><img class="logo" src="images/logo.jpg.png" alt="logo_home"></a>
 		<div class="community">
-			<form action="selectCommunity">
-				<select name="community">
+			<form action="">
+				<select class="community_dropdown" name="community">
 					<option value="0" selected>My Communities</option>
 					<option value="Tesla News">Tesla News</option>
 					<option value="Metaverse">Metaverse</option>
@@ -41,8 +41,8 @@
 			</form>
 		</div>
 		<div class="search">
-			<form action="searchContents">
-				<input type="text" placeholder="search contents">
+			<form action="">
+				<input class="search_input_sm" type="text" placeholder="search contents">
 			</form>
 		</div>
 		<div class="quiz">
@@ -85,14 +85,14 @@
 			</div>
 			<div class="contents">
 				<div class="vote">
-					<a href="" class="upvote"><img src="../images/arrow_up.png" alt="upvote_button" width="20px"></a>
+					<a href="" class="upvote"><img src="images/arrow_up.png" alt="upvote_button" width="20px"></a>
 					<span class="vote_result">150</span>
-					<a href="" class="downvote"><img src="../images/arrow_down.png" alt="downvote_button" width="20px"></a>
+					<a href="" class="downvote"><img src="images/arrow_down.png" alt="downvote_button" width="20px"></a>
 				</div>
 				<a href="">
 					<div class="article">
 						<div class="header">
-							<a href=""><img src="../images/tesla_thumbnail.png" alt="" class="community_thumbnail" width="30px"
+							<a href=""><img src="images/tesla_thumbnail.png" alt="" class="community_thumbnail" width="30px"
 									height="30px"></a>
 							<span class="community_name"><strong>Tesla News</strong></span>
 							<span class="author">by <strong>TeslaRider</strong></span>
@@ -101,21 +101,21 @@
 						<div class="content_words">What's new is going to be revealed on this weekend's Tesla day. Can't wait to
 							see!!!</div>
 						<div class="additional_info">
-							<img src="../images/model_x.png" alt="uploaded_image" width="300px">
+							<img src="images/model_x.png" alt="uploaded_image" width="300px">
 						</div>
 					</div>
 				</a>
 			</div>
 			<div class="contents">
 				<div class="vote">
-					<a href="" class="upvote"><img src="../images/arrow_up.png" alt="upvote_button" width="20px"></a>
+					<a href="" class="upvote"><img src="images/arrow_up.png" alt="upvote_button" width="20px"></a>
 					<span class="vote_result">150</span>
-					<a href="" class="downvote"><img src="../images/arrow_down.png" alt="downvote_button" width="20px"></a>
+					<a href="" class="downvote"><img src="images/arrow_down.png" alt="downvote_button" width="20px"></a>
 				</div>
 				<a href="">
 					<div class="article">
 						<div class="header">
-							<a href=""><img src="../images/tesla_thumbnail.png" alt="" class="community_thumbnail" width="30px"
+							<a href=""><img src="images/tesla_thumbnail.png" alt="" class="community_thumbnail" width="30px"
 									height="30px"></a>
 							<span class="community_name"><strong>Tesla News</strong></span>
 							<span class="author">by <strong>TeslaRider</strong></span>
@@ -124,7 +124,7 @@
 						<div class="content_words">What's new is going to be revealed on this weekend's Tesla day. Can't wait to
 							see!!!</div>
 						<div class="additional_info">
-							<img src="../images/model_x.png" alt="uploaded_image" width="300px">
+							<img src="images/model_x.png" alt="uploaded_image" width="300px">
 							<div class="poll_view">
 								<table>
 									<tr>
@@ -227,7 +227,19 @@
 				<!-- email_input -->
 				<div class="email_input">
 					<input name="email" class="input_email" type="text" placeholder="enter email and verify it">
-					<input name="verify_email" class="button_verify" type="button" value="verify">
+					<input name="verify_email" class="button_verify" type="button" value="verify" onclick="checkEmail(document.signup_form.email.value);" />
+				</div>
+				<!-- email require message -->
+				<div class="email_require">
+					<span>Please enter your email address.</span>
+				</div>
+				<!-- email available message -->
+				<div class="email_available">
+					<span>This email address is available.</span>
+				</div>
+				<!-- email unavailable message -->
+				<div class="email_unavailable">
+					<span>This email address is unavailable.</span>
 				</div>
 				<!-- continue button email -->
 				<div class="continue_email">
@@ -315,10 +327,12 @@
 					<a href=""><span>LOGIN</span></a>
 				</div>
 			</form>
+			<form name="signup_form_hidden" action="emailCheck">
+				<input type="hidden" name="email">
+			</form>
 		</div>
 	</div>
 </body>
-<script src="../js/jquery-3.6.0.min.js"></script>
-<script src="../js/index.js"></script>
-</script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/index.js"></script>
 </html>

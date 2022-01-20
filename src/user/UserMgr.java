@@ -20,6 +20,7 @@ public class UserMgr {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		boolean flag = false;
+		System.out.println("email checked.");
 		
 		try {
 			con = pool.getConnection();
@@ -27,6 +28,32 @@ public class UserMgr {
 			String sql = "select email from user where email=?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, email);
+			rs = pstmt.executeQuery();
+			
+			flag = rs.next();
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt, rs);
+		}
+		
+		return flag;
+	}
+	
+	public boolean checkUsername(String username) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		boolean flag = false;
+		
+		try {
+			con = pool.getConnection();
+			
+			String sql = "select username from user where username=?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, username);
 			rs = pstmt.executeQuery();
 			
 			flag = rs.next();

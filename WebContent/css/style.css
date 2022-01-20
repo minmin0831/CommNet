@@ -43,6 +43,15 @@ main {
 	align-items: center;
 	text-align: center;
 }
+.search_input_lg {
+	min-width: 910px;
+}
+.community_dropdown {
+	min-width: 234px;
+}
+.search_input_sm {
+	min-width: 350px;
+}
 .search form {
 	height: 40px;
 	width: 100%;
@@ -67,6 +76,20 @@ input {
 	cursor: pointer;
 }
 input:hover {
+	background-color: #4a86e8ff;
+	color: white;
+}
+button {
+	margin: 10px;
+	padding: 10px;
+	width: 150px;
+	height: 40px;
+	font-size: 16px;
+	border: 1px solid #4a86e8ff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button:hover {
 	background-color: #4a86e8ff;
 	color: white;
 }
@@ -284,7 +307,6 @@ main aside footer span {
 	height: 100%;
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.4);
-	display: none;
 }
 
 /* signup_modal starts */
@@ -319,7 +341,7 @@ main aside footer span {
 	text-align: left;
 	padding: 15px;
 	margin-bottom: 5px;
-	display: block;
+	/* display: block; */
 }
 .signup_modal .message .email_message .title {
 	display: block;
@@ -328,6 +350,12 @@ main aside footer span {
 .signup_modal .message .email_message .desc {
 	display: block;
 	font-size: 16px;
+}
+/* email_require message */
+.email_require {
+	color: #4a86e8ff;
+	margin-bottom: 10px;
+	display: none;
 }
 .signup_modal .continue_email {
 	display: block;
@@ -343,7 +371,7 @@ main aside footer span {
 	text-align: left;
 	padding: 15px;
 	margin-bottom: 5px;
-	display: none;
+	/* display: none; */
 }
 .signup_modal .message .username_password_message .title {
 	display: block;
@@ -353,8 +381,15 @@ main aside footer span {
 	display: block;
 	font-size: 16px;
 }
-.signup_modal .continue_username_password {
+/* username_require message */
+.username_require {
+	color: #4a86e8ff;
+	margin-bottom: 10px;
 	display: none;
+}
+
+.signup_modal .continue_username_password {
+	/* display: none; */
 }
 /* username_password ends */
 
@@ -367,7 +402,7 @@ main aside footer span {
 	text-align: left;
 	padding: 15px;
 	margin: 5px 5px 5px 0;
-	display: none;
+	/* display: none; */
 }
 .signup_modal .message .gender_message .title {
 	display: block;
@@ -378,7 +413,7 @@ main aside footer span {
 	font-size: 16px;
 }
 .signup_modal .continue_gender {
-	display: none;
+	/* display: none; */
 }
 /* gender_message ends */
 
@@ -452,7 +487,7 @@ main aside footer span {
 
 /* skip_button starts */
 .signup_modal .message .skip_button{
-	display: none;
+	/* display: none; */
 }
 .signup_modal .message .skip_button .skip {
 	position: absolute;
@@ -516,7 +551,7 @@ main aside footer span {
 
 /* username and passwords input starts */
 .signup_modal .username_password_input {
-	display: none;
+	/* display: none; */
 }
 .signup_modal .username_password_input .input_username {
 	margin: 5px 5px 5px 0;
@@ -545,6 +580,13 @@ main aside footer span {
 	width: 400px;
 	cursor: default;
 }
+/* password_require message */
+.password_require {
+	color: #4a86e8ff;
+	margin-bottom: 10px;
+	display: none;
+}
+
 .signup_modal .username_password_input .input_password:hover {
 	background-color: white;
 	color: gray;
@@ -556,6 +598,19 @@ main aside footer span {
 	width: 400px;
 	cursor: default;
 }
+/* password_confirm_require message */
+.password_confirm_require {
+	color: #4a86e8ff;
+	margin-bottom: 10px;
+	display: none;
+}
+/* unmatched_passwords message */
+.unmatched_passwords {
+	color: #4a86e8ff;
+	margin-bottom: 10px;
+	display: none;
+}
+
 .signup_modal .username_password_input .input_password_confirm:hover {
 	background-color: white;
 	color: gray;
@@ -565,7 +620,7 @@ main aside footer span {
 
 /* gender input starts */
 .signup_modal .gender_input {
-	display: none;
+	/* display: none; */
 }
 .signup_modal .gender_input {
 	margin: 0;
